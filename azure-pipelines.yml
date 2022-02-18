@@ -19,3 +19,9 @@ steps:
     npm install
     npm run build
   displayName: 'npm install and build'
+- task: Npm@1
+  inputs:
+    command: 'custom'
+    customCommand: 'version patch -m "Update version" --force'
+    customRegistry: 'useFeed'
+    customFeed: 'e0167f6c-12ea-45ed-93f4-8ebfd77ccd16'
