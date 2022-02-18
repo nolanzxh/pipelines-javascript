@@ -22,6 +22,6 @@ steps:
 - task: Npm@1
   inputs:
     command: 'custom'
-    customCommand: 'version patch -m "Update version" --force'
+    customCommand: 'version patch -m "Update version [ci skip]" --force'
     customRegistry: 'useFeed'
     customFeed: 'e0167f6c-12ea-45ed-93f4-8ebfd77ccd16'
